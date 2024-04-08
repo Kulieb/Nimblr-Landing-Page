@@ -1,0 +1,296 @@
+@font-face {
+  font-family: PP Mori;
+  src: url(../Fonts/PPMori-Extralight.otf);
+}
+
+@font-face {
+  font-family: PP Mori Bold;
+  src: url(../Fonts/PPMori-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Humane;
+  src: url(../Fonts/Humane-Bold.ttf);
+}
+
+@font-face {
+  font-family: PP Eiko;
+  src: url(../Fonts/PPEiko-Thin.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #1c1c1c;
+}
+
+h1 {
+  color: #838383;
+  font-size: 6rem;
+  font-family: "PP Mori", sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.content-2 {
+  display: flex;
+  align-items: flex-end;
+  background-color: #1c1c1c;
+}
+
+.reveal-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 200px;
+}
+
+.main1 {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  justify-content: flex-start;
+  align-items: flex-end;
+  top: 140px;
+  padding: 0;
+}
+
+.paragraph1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.highlight1 {
+  color: black;
+  font-family: PP Eiko, sans-serif;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .highlight1 {
+    color: white;
+  }
+}
+
+.nav-button {
+  order: 2;
+  background-color: #ffc424;
+  color: #1c1c1c;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  border-radius: 50px;
+  height: 45px;
+  width: 140px;
+  padding: 12px;
+  font-family: PP Mori Bold, sans-serif;
+}
+
+.nav-button-icon {
+  height: 16px;
+  fill: black;
+}
+
+.button2 {
+  border: none;
+  background-color: #ffc424;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 50px;
+  height: 40px;
+  color: #1c1c1c;
+  font-family: PP Mori, sans-serif;
+  font-size: 16px;
+}
+
+.nav-bar {
+  order: 1;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-radius: 50px;
+  outline: 1px solid#1c1c1c;
+  gap: 16px;
+  margin-right: 20px;
+  padding: 0 4px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.navbar {
+  order: 1;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: black;
+  border-radius: 50px;
+  outline: 1px solid#1c1c1c;
+  width: 50vw;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  text-decoration: none;
+  color: #838383;
+  font-size: 16px;
+  font-family: PP Mori, sans-serif;
+  cursor: pointer;
+  position: left;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.arrow-icon {
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container2 {
+  position: absolute;
+  left: 30%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 400px;
+  z-index: 2;
+  margin-top: -100px;
+}
+
+.phrase2 {
+  font-size: 18px;
+  font-family: PP Mori;
+  color: #555555;
+  margin-top: 60px;
+}
+
+.hovering-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.scrolling-text-top,
+.scrolling-text-bottom {
+  font-size: 300px;
+  background: -webkit-linear-gradient(#222222, #1c1c1c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Humane;
+  text-align: center;
+}
+
+.plus-icon {
+  height: 16px;
+  width: 16px;
+  fill: black;
+}
+
+.book-button {
+  background-color: #ffc424;
+  color: #1c1c1c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  border-radius: 60px;
+  height: 60px;
+  width: 246px;
+  padding: 20px 32px;
+  font-family: PP Mori Bold, sans-serif;
+  margin-top: -210px;
+}
+
+.button3 {
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+section {
+  height: 100vh;
+  padding: 0 clamp(4rem, 12vw, 20rem);
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+  margin: 0;
+  font-family: PP Eiko;
+  color: white;
+}
+
+.cursor {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.35s ease-out;
+  z-index: 2;
+}
+
+.cursor-hover {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* .content:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+} */
